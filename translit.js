@@ -1,7 +1,3 @@
-/**
- * Created by pavel on 10/26/15.
- */
-
 (function () {
     'use strict';
     var translit = function (data) {
