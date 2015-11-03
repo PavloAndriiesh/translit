@@ -1,6 +1,18 @@
-(function () {
+(function( global, factory ) {
+    if (typeof define === 'function' && define.amd) {
+        define(function () {
+            return (global.translit = factory());
+        });
+    } else if ( typeof module === "object" && typeof module.exports === "object" ) {
+        module.exports = global.translit =  factory()
+    } else {
+        global.translit = factory();
+    }
+}(typeof window !== "undefined" ? window : this, function() {
     'use strict';
-    var translit = function (data) {
+    var translit;
+
+    function transliterator (data) {
         var resultString = '';
         for (var i=0; i < data.length; i++) {
             var char = data[i];
@@ -213,5 +225,6 @@
         return resultString;
     };
 
-    window.translit = translit;
-})();
+    translit = transliterator;
+    return translit;
+}));
