@@ -1,20 +1,30 @@
 var gulp = require('gulp'),
     uglify = require('gulp-uglify'),
-    rename = require('gulp-rename');
+    rename = require('gulp-rename'),
+    clean = require('gulp-clean');
 
 
+gulp.task('copy', function() {
+    return gulp.src('src/translit.js')
+        .pipe(gulp.dest('dist/'));
+});
 gulp.task('compress', function() {
-    return gulp.src('translit.js')
+    return gulp.src('src/translit.js')
         .pipe(uglify())
-        .pipe(gulp.dest('src/'));
+        .pipe(gulp.dest('tmp/'));
 });
 
-gulp.task('rename', ['compress'], function() {
-    return gulp.src("dist/translit.js")
+gulp.task('rename', ['copy', 'compress'], function() {
+    return gulp.src("tmp/translit.js")
         .pipe(rename("translit.min.js"))
-        .pipe(gulp.dest("./src"));
+        .pipe(gulp.dest("./dist"));
 });
 
-gulp.task('default', ['rename'], function() {
+gulp.task('clean', ['rename'], function () {
+    return gulp.src('tmp', {read: false})
+        .pipe(clean());
+});
+
+gulp.task('default', ['clean'], function() {
 
 });

@@ -1,1 +1,217 @@
-!function(){"use strict";var e=function(e){for(var a="",r=0;r<e.length;r++){var s=e[r];switch(s.charCodeAt(0)){case 1040:a+="A";break;case 1041:a+="B";break;case 1042:a+="V";break;case 1043:a+="G";break;case 1044:a+="D";break;case 1045:a+="E";break;case 1025:a+="E";break;case 1046:a+="ZH";break;case 1047:a+="Z";break;case 1048:a+="I";break;case 1049:a+="I";break;case 1050:a+="K";break;case 1051:a+="L";break;case 1052:a+="M";break;case 1053:a+="N";break;case 1054:a+="O";break;case 1055:a+="P";break;case 1056:a+="R";break;case 1057:a+="S";break;case 1058:a+="T";break;case 1059:a+="U";break;case 1060:a+="F";break;case 1061:a+="KH";break;case 1062:a+="TS";break;case 1063:a+="CH";break;case 1064:a+="SH";break;case 1065:a+="SHCH";break;case 1066:a+="IA";break;case 1067:a+="Y";break;case 1068:a+="";break;case 1069:a+="e";break;case 1070:a+="IU";break;case 1071:a+="IA";break;case 1072:a+="a";break;case 1073:a+="b";break;case 1074:a+="v";break;case 1075:a+="g";break;case 1076:a+="d";break;case 1077:a+="e";break;case 1105:a+="e";break;case 1078:a+="zh";break;case 1079:a+="z";break;case 1080:a+="i";break;case 1081:a+="i";break;case 1082:a+="k";break;case 1083:a+="l";break;case 1084:a+="m";break;case 1085:a+="n";break;case 1086:a+="o";break;case 1087:a+="p";break;case 1088:a+="r";break;case 1089:a+="s";break;case 1090:a+="t";break;case 1091:a+="u";break;case 1092:a+="f";break;case 1093:a+="kh";break;case 1094:a+="ts";break;case 1095:a+="ch";break;case 1096:a+="sh";break;case 1097:a+="shch";break;case 1098:a+="ie";break;case 1099:a+="y";break;case 1100:a+="";break;case 1101:a+="e";break;case 1102:a+="iu";break;case 1103:a+="ia";break;default:a+=s}}return a};window.translit=e}();
+(function () {
+    'use strict';
+    var translit = function (data) {
+        var resultString = '';
+        for (var i=0; i < data.length; i++) {
+            var char = data[i];
+
+            switch (char.charCodeAt(0)) {
+                case 1040:
+                    resultString += 'A';
+                    break;
+                case 1041:
+                    resultString += 'B';
+                    break;
+                case 1042:
+                    resultString += 'V';
+                    break;
+                case 1043:
+                    resultString += 'G';
+                    break;
+                case 1044:
+                    resultString += 'D';
+                    break;
+                case 1045:
+                    resultString += 'E';
+                    break;
+                case 1025:
+                    resultString += 'E';
+                    break;
+                case 1046:
+                    resultString += 'ZH';
+                    break;
+                case 1047:
+                    resultString += 'Z';
+                    break;
+                case 1048:
+                    resultString += 'I';
+                    break;
+                case 1049:
+                    resultString += 'I';
+                    break;
+                case 1050:
+                    resultString += 'K';
+                    break;
+                case 1051:
+                    resultString += 'L';
+                    break;
+                case 1052:
+                    resultString += 'M';
+                    break;
+                case 1053:
+                    resultString += 'N';
+                    break;
+                case 1054:
+                    resultString += 'O';
+                    break;
+                case 1055:
+                    resultString += 'P';
+                    break;
+                case 1056:
+                    resultString += 'R';
+                    break;
+                case 1057:
+                    resultString += 'S';
+                    break;
+                case 1058:
+                    resultString += 'T';
+                    break;
+                case 1059:
+                    resultString += 'U';
+                    break;
+                case 1060:
+                    resultString += 'F';
+                    break;
+                case 1061:
+                    resultString += 'KH';
+                    break;
+                case 1062:
+                    resultString += 'TS';
+                    break;
+                case 1063:
+                    resultString += 'CH';
+                    break;
+                case 1064:
+                    resultString += 'SH';
+                    break;
+                case 1065:
+                    resultString += 'SHCH';
+                    break;
+                case 1066:
+                    resultString += 'IA';
+                    break;
+                case 1067:
+                    resultString += 'Y';
+                    break;
+                case 1068:
+                    resultString += '';
+                    break;
+                case 1069:
+                    resultString += 'e';
+                    break;
+                case 1070:
+                    resultString += 'IU';
+                    break;
+                case 1071:
+                    resultString += 'IA';
+                    break;
+                case 1072:
+                    resultString += 'a';
+                    break;
+                case 1073:
+                    resultString += 'b';
+                    break;
+                case 1074:
+                    resultString += 'v';
+                    break;
+                case 1075:
+                    resultString += 'g';
+                    break;
+                case 1076:
+                    resultString += 'd';
+                    break;
+                case 1077:
+                    resultString += 'e';
+                    break;
+                case 1105:
+                    resultString += 'e';
+                    break;
+                case 1078:
+                    resultString += 'zh';
+                    break;
+                case 1079:
+                    resultString += 'z';
+                    break;
+                case 1080:
+                    resultString += 'i';
+                    break;
+                case 1081:
+                    resultString += 'i';
+                    break;
+                case 1082:
+                    resultString += 'k';
+                    break;
+                case 1083:
+                    resultString += 'l';
+                    break;
+                case 1084:
+                    resultString += 'm';
+                    break;
+                case 1085:
+                    resultString += 'n';
+                    break;
+                case 1086:
+                    resultString += 'o';
+                    break;
+                case 1087:
+                    resultString += 'p';
+                    break;
+                case 1088:
+                    resultString += 'r';
+                    break;
+                case 1089:
+                    resultString += 's';
+                    break;
+                case 1090:
+                    resultString += 't';
+                    break;
+                case 1091:
+                    resultString += 'u';
+                    break;
+                case 1092:
+                    resultString += 'f';
+                    break;
+                case 1093:
+                    resultString += 'kh';
+                    break;
+                case 1094:
+                    resultString += 'ts';
+                    break;
+                case 1095:
+                    resultString += 'ch';
+                    break;
+                case 1096:
+                    resultString += 'sh';
+                    break;
+                case 1097:
+                    resultString += 'shch';
+                    break;
+                case 1098:
+                    resultString += 'ie';
+                    break;
+                case 1099:
+                    resultString += 'y';
+                    break;
+                case 1100:
+                    resultString += '';
+                    break;
+                case 1101:
+                    resultString += 'e';
+                    break;
+                case 1102:
+                    resultString += 'iu';
+                    break;
+                case 1103:
+                    resultString += 'ia';
+                    break;
+                default:
+                    resultString += char;
+                    break;
+            }
+        }
+
+        return resultString;
+    };
+
+    window.translit = translit;
+})();

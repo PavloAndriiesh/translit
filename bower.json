@@ -13,5 +13,12 @@
   "keywords": [
     "translit"
   ],
-  "license": "MIT"
+  "license": "MIT",
+  "ignore": [
+    "node_modules",
+    "src",
+    ".gitignore",
+    "gulpfile.js",
+    "README.md"
+  ]
 }
