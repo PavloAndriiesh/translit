@@ -3,7 +3,6 @@ var gulp = require('gulp'),
     rename = require('gulp-rename'),
     clean = require('gulp-clean');
 
-
 gulp.task('copy', function() {
     return gulp.src('src/translit.js')
         .pipe(gulp.dest('dist/'));

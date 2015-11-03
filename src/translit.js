@@ -4,7 +4,7 @@
             return (global.translit = factory());
         });
     } else if ( typeof module === "object" && typeof module.exports === "object" ) {
-        module.exports = global.translit =  factory()
+        module.exports = (global.translit =  factory());
     } else {
         global.translit = factory();
     }
