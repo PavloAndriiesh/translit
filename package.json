@@ -1,6 +1,6 @@
 {
   "name": "translit",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "description": "Transliterates cyrillic to latin.",
   "main": "gulpfile.js",
   "scripts": {
