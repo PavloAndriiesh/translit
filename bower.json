@@ -1,6 +1,6 @@
 {
   "name": "translit",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "homepage": "https://github.com/pandriiesh/translit",
   "authors": [
     "Pavlo Andriiesh <p.andriiesh@mobidev.biz>"
@@ -16,8 +16,8 @@
   "license": "MIT",
   "ignore": [
     "node_modules",
-    "src",
     ".gitignore",
+    "package.json",
     "gulpfile.js",
     "README.md"
   ]
