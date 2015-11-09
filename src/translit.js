@@ -1,3 +1,9 @@
+/*!
+ * Translit JavaScript Library v0.0.9
+ * Released under the MIT license
+ * Date: 2015-11-09
+ */
+
 (function( global, factory ) {
     if (typeof define === 'function' && define.amd) {
         define(function () {
@@ -10,9 +16,8 @@
     }
 }(typeof window !== "undefined" ? window : this, function() {
     'use strict';
-    var translit;
 
-    function transliterator (data) {
+    function translit (data) {
         var resultString = '';
         for (var i=0; i < data.length; i++) {
             var char = data[i];
@@ -223,8 +228,7 @@
         }
 
         return resultString;
-    };
+    }
 
-    translit = transliterator;
     return translit;
 }));
